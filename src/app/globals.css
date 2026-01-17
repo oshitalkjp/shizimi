@@ -119,11 +119,35 @@ a {
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: var(--font-yuji), serif;
   color: var(--neon-white);
   text-shadow: 0 0 10px var(--fire-red);
+}
+
+@media (min-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-lang {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--fire-yellow);
+  color: var(--fire-yellow);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-lang:hover {
+  background: var(--fire-yellow);
+  color: black;
+  box-shadow: 0 0 10px var(--fire-yellow);
 }
 
 /* Particles */
@@ -279,7 +303,7 @@ a {
 }
 
 .hero-text {
-  text-center: center;
+  text-align: center;
   z-index: 20;
   margin-top: 2.5rem;
   mix-blend-mode: overlay;

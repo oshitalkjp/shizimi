@@ -210,6 +210,8 @@ const translations = {
   }
 };
 
+const basePath = '/SyuzoCOIN';
+
 export default function Home() {
   const [lang, setLang] = useState<Lang>('ja');
   const [isHovered, setIsHovered] = useState(false);
@@ -269,7 +271,7 @@ export default function Home() {
         <div className="coin-wrapper">
           <div className="spin-coin">
             <Image
-              src="/assets/final_coin.jpg"
+              src={`${basePath}/assets/final_coin.jpg`}
               alt="Shuzo Coin"
               fill
               className="img-contain rounded-full"
@@ -285,7 +287,7 @@ export default function Home() {
           onMouseLeave={() => setIsHovered(false)}
         >
           <Image
-            src="/assets/character_v2.png"
+            src={`${basePath}/assets/character_v2.png`}
             alt="Matsuoka Shuzo Parody"
             fill
             className="img-contain character-img"
@@ -317,7 +319,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/assets/real_shijimi.jpg"
+                src={`${basePath}/assets/real_shijimi.jpg`}
                 alt="Shijimi"
                 fill
                 className="object-contain opacity-80"
@@ -328,10 +330,10 @@ export default function Home() {
 
         {/* CTA */}
         <div className="cta-container">
-          <a href="#" className="btn-primary scale-on-hover">
+          <a href="https://raydium.io/" target="_blank" rel="noopener noreferrer" className="btn-primary scale-on-hover">
             {t.buyNow}
           </a>
-          <a href="#" className="btn-primary btn-outline scale-on-hover">
+          <a href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer" className="btn-primary btn-outline scale-on-hover">
             {t.chart}
           </a>
         </div>
