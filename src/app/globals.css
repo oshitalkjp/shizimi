@@ -561,7 +561,17 @@ a {
 
 /* Image Blending Fix */
 .spin-coin img {
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
+  /* 白背景を透過させる */
+  border-radius: 50%;
+  background: transparent;
+}
+
+.spin-coin {
+  background: white;
+  /* multiplyを使う場合、一旦白背景に乗せると綺麗に見えるが、外側を丸く抜く必要がある */
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .character-img {

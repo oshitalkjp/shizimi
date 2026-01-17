@@ -271,7 +271,7 @@ export default function Home() {
         <div className="coin-wrapper">
           <div className="spin-coin">
             <Image
-              src={`${basePath}/assets/final_coin.jpg`}
+              src={`${basePath}/assets/shuzo_coin_transparent.jpg`}
               alt="Shuzo Coin"
               fill
               className="img-contain rounded-full"
