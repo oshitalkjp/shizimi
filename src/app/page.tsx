@@ -13,11 +13,11 @@ const translations = {
     heroSubtitle: "しじみがトゥルル！",
     buyNow: "購入する",
     chart: "チャート",
-    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $SYUZO TO THE MOON! 月まで熱くなれ！ • ",
+    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $443 TO THE MOON! 月まで熱くなれ！ • ",
     caAnnouncement: "🔥 21時 CA公開！ 🔥",
-    whyTitle: "WHY SYUZO?",
+    whyTitle: "WHY 443?",
     whyText1: "多くのコインは「終わり」があるからゼロになる。彼らは止まり、諦める。",
-    whyText2: "$SYUZOは絶対に諦めない。",
+    whyText2: "$443は絶対に諦めない。",
     whyText3: "チャートが赤くなれば、我々はより大声で叫ぶ。市場がクラッシュすれば、温度を上げる。これは単なるコインではない。",
     whyHighlight: "熱血というライフスタイルだ。",
     tokenomics: "トークノミクス",
@@ -75,7 +75,7 @@ const translations = {
           voteTitle: "投票（A/B/C）",
           voteItems: [
             "A) スポンサー収益の配分率を投票（0〜50%の範囲）＋寄付先決定",
-            "B) 週次イベント賞金増（$SYUZO配布枠増やす）",
+            "B) 週次イベント賞金増（$443配布枠増やす）",
             "C) 週次透明性レポート開始（寄付/買い支えTXまとめ）"
           ],
           limit: "Buy Support 月間上限：20 SOL"
@@ -115,11 +115,11 @@ const translations = {
     heroSubtitle: "SHIJIMI IS TRULL!",
     buyNow: "BUY NOW",
     chart: "CHART",
-    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $SYUZO TO THE MOON! 月まで熱くなれ！ • ",
+    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $443 TO THE MOON! 月まで熱くなれ！ • ",
     caAnnouncement: "🔥 CA Release at 21:00 JST! 🔥",
-    whyTitle: "WHY SYUZO?",
+    whyTitle: "WHY 443?",
     whyText1: "Most coins go to zero because they finish. They stop. They give up.",
-    whyText2: "$SYUZO NEVER GIVES UP.",
+    whyText2: "$443 NEVER GIVES UP.",
     whyText3: "When the chart is red, we shout louder. When the market crashes, we turn up the heat. This is not just a coin.",
     whyHighlight: "It is a lifestyle of heat.",
     tokenomics: "TOKENOMICS",
@@ -177,7 +177,7 @@ const translations = {
           voteTitle: "Vote (A/B/C)",
           voteItems: [
             "A) Vote on Revenue Allocation % (0-50%) + Decide Destination",
-            "B) Increase Weekly Event Prizes (More $SYUZO)",
+            "B) Increase Weekly Event Prizes (More $443)",
             "C) Start Weekly Transparency Report (Donation/Buy Support TX)"
           ],
           limit: "Buy Support Monthly Cap: 20 SOL"
@@ -222,7 +222,7 @@ export default function Home() {
   const t = translations[lang];
 
   const copyAddress = () => {
-    navigator.clipboard.writeText("0xSYUZO99999999999999999999HEAT");
+    navigator.clipboard.writeText("0x44399999999999999999999HEAT");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -257,7 +257,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="header">
-        <h1 className="logo-text text-glow">$SHIZIMI</h1>
+        <h1 className="logo-text text-glow">$443</h1>
         <div className="header-right">
           <div className="header-social">
             <a href="https://x.com/shizimi443sol" target="_blank" rel="noopener noreferrer" className="header-social-link" title="X (Twitter)">
@@ -292,21 +292,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Character */}
-          <div
-            className={`character-container ${isHovered ? 'shake-hard' : ''}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="character-overlay">
-              <Image
-                src={`${basePath}/assets/character_v2.png`}
-                alt="Matsuoka Syuzo Parody"
-                fill
-                className="img-contain character-img"
-              />
-            </div>
-          </div>
         </div>
 
         {/* Main Title Impact */}
