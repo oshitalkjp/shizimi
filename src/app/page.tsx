@@ -257,10 +257,10 @@ export default function Home() {
 
       {/* Header */}
       <header className="header">
-        <h1 className="logo-text text-glow">$SYUZO</h1>
+        <h1 className="logo-text text-glow">$SHIZIMI</h1>
         <div className="header-right">
           <div className="header-social">
-            <a href="https://x.com/syuzoshizimi" target="_blank" rel="noopener noreferrer" className="header-social-link" title="X (Twitter)">
+            <a href="https://x.com/shizimi443sol" target="_blank" rel="noopener noreferrer" className="header-social-link" title="X (Twitter)">
               𝕏
             </a>
             <a href="https://t.me/syuzoshizimitrill" target="_blank" rel="noopener noreferrer" className="header-social-link" title="Telegram">
@@ -283,7 +283,7 @@ export default function Home() {
           <div className="coin-wrapper">
             <div className="spin-coin">
               <Image
-                src={`${basePath}/assets/shuzo_coin_transparent.jpg`}
+                src={`${basePath}/assets/coin.png`}
                 alt="Syuzo Coin"
                 fill
                 className="img-contain rounded-full"
@@ -497,7 +497,7 @@ export default function Home() {
           {t.footerWealthy}<br />{t.footerHot}
         </p>
         <div className="social-links">
-          <a href="https://x.com/syuzoshizimi" target="_blank" rel="noopener noreferrer" className="social-icon">𝕏</a>
+          <a href="https://x.com/shizimi443sol" target="_blank" rel="noopener noreferrer" className="social-icon">𝕏</a>
           <a href="https://t.me/syuzoshizimitrill" target="_blank" rel="noopener noreferrer" className="social-icon">✈️</a>
         </div>
         <p className="footer-disclaimer">
