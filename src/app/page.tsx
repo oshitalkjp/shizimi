@@ -13,11 +13,11 @@ const translations = {
     heroSubtitle: "しじみがトゥルル！",
     buyNow: "購入する",
     chart: "チャート",
-    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ SHUZO COIN TO THE MOON! 月まで熱くなれ！ • ",
+    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $SYUZO TO THE MOON! 月まで熱くなれ！ • ",
     caAnnouncement: "🔥 21時 CA公開！ 🔥",
-    whyTitle: "WHY SHUZO?",
+    whyTitle: "WHY SYUZO?",
     whyText1: "多くのコインは「終わり」があるからゼロになる。彼らは止まり、諦める。",
-    whyText2: "SHUZO COINは絶対に諦めない。",
+    whyText2: "$SYUZOは絶対に諦めない。",
     whyText3: "チャートが赤くなれば、我々はより大声で叫ぶ。市場がクラッシュすれば、温度を上げる。これは単なるコインではない。",
     whyHighlight: "熱血というライフスタイルだ。",
     tokenomics: "トークノミクス",
@@ -115,11 +115,11 @@ const translations = {
     heroSubtitle: "SHIJIMI IS TRULL!",
     buyNow: "BUY NOW",
     chart: "CHART",
-    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ SHUZO COIN TO THE MOON! 月まで熱くなれ！ • ",
+    marquee: "DON'T GIVE UP! 諦めるな！ SHIJIMI IS TRULL! しじみがトゥルル！ $SYUZO TO THE MOON! 月まで熱くなれ！ • ",
     caAnnouncement: "🔥 CA Release at 21:00 JST! 🔥",
-    whyTitle: "WHY SHUZO?",
+    whyTitle: "WHY SYUZO?",
     whyText1: "Most coins go to zero because they finish. They stop. They give up.",
-    whyText2: "SHUZO COIN NEVER GIVES UP.",
+    whyText2: "$SYUZO NEVER GIVES UP.",
     whyText3: "When the chart is red, we shout louder. When the market crashes, we turn up the heat. This is not just a coin.",
     whyHighlight: "It is a lifestyle of heat.",
     tokenomics: "TOKENOMICS",
@@ -222,7 +222,7 @@ export default function Home() {
   const t = translations[lang];
 
   const copyAddress = () => {
-    navigator.clipboard.writeText("0xSHUZO99999999999999999999HEAT");
+    navigator.clipboard.writeText("0xSYUZO99999999999999999999HEAT");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -257,7 +257,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="header">
-        <h1 className="logo-text text-glow">SHUZO COIN</h1>
+        <h1 className="logo-text text-glow">$SYUZO</h1>
         <div className="header-right">
           <div className="header-social">
             <a href="https://x.com/syuzoshizimi" target="_blank" rel="noopener noreferrer" className="header-social-link" title="X (Twitter)">
@@ -284,7 +284,7 @@ export default function Home() {
             <div className="spin-coin">
               <Image
                 src={`${basePath}/assets/shuzo_coin_transparent.jpg`}
-                alt="Shuzo Coin"
+                alt="Syuzo Coin"
                 fill
                 className="img-contain rounded-full"
                 priority
@@ -301,7 +301,7 @@ export default function Home() {
             <div className="character-overlay">
               <Image
                 src={`${basePath}/assets/character_v2.png`}
-                alt="Matsuoka Shuzo Parody"
+                alt="Matsuoka Syuzo Parody"
                 fill
                 className="img-contain character-img"
               />
@@ -371,7 +371,7 @@ export default function Home() {
         <div className="video-container">
           <iframe
             src="https://www.youtube.com/embed/vc_UVpFayaw"
-            title="Shuzo Video"
+            title="Syuzo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
