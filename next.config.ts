@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/SyuzoCOIN', // リポジトリ名を設定
-  assetPrefix: '/SyuzoCOIN',
+  basePath: '/shizimi', // リポジトリ名を設定
+  assetPrefix: '/shizimi',
   /* config options here */
   // reactCompiler: true, // v19以降やCanaryで有効な場合があるが一旦コメントアウト
 };
